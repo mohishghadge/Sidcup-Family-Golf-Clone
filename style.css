@@ -1,0 +1,909 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #Fff;
+    
+}
+
+
+*::selection{
+
+    background-color: #fff;
+    color: #b5dd23;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+    background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#b5dd23;
+    border-radius: 50px;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+#nav{
+    height: 120px;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 0 150px;
+    gap: 60px;
+    position: fixed;
+    z-index: 99;
+}
+
+
+#nav img{
+    height: 85px;
+
+}
+
+#nav h4{
+    font-size: 17px;
+    font-weight: 100px;
+  
+
+}
+
+#nav h4:hover{
+    color: #b5dd23;
+  
+
+}
+
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+}
+
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#page1{
+    
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+    flex-direction: column;                           
+}
+
+
+#page1 h1{
+    font-size: 140px;
+    font-weight: 900;
+text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    z-index: 10;
+
+    position: relative;
+}
+
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+#page1 h1::before{
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color:    #000;
+  top: -6px;
+  left: -6px;
+  z-index: -1;
+  -webkit-text-stroke: 1px #b5dd23;
+}
+
+
+
+
+#page1 h2{
+    font-size: 33px;
+    font-weight: 800;
+    text-align: center;
+margin-bottom: 15px;
+    
+}
+
+
+
+#page1 p{
+    font-size: 22px;
+    font-weight: 500;
+    width: 40%;
+    text-align: center;
+    
+
+    
+}
+
+
+#page1 #arrow{
+    height: 250px;
+    width:250px;
+    background-color:transparent;
+    border: 2px solid #b5dd23;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left:-20%;
+    bottom:-5%;
+    transition: all ease 0.5s;
+}
+
+
+
+#page1 #arrow:hover{
+    scale: 0.4;
+    background-color: #b5dd23;
+
+}
+
+#page1 #arrow i {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+
+#page1 #arrow a {
+   text-decoration: none;
+}
+
+
+#page1 #arrow i:hover {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #b5dd23;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: #b5dd2350;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+
+}
+
+
+#scroller::-webkit-scrollbar{
+    display: none;
+
+}
+
+#scroller{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+
+#scroller-in{
+    margin-top: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: Montserrat, sans-serif;
+    margin-right: 10px;
+    color: black;
+    letter-spacing: .02em;
+    text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff; /* Adds a white shadow to each side of the text */
+}
+
+
+#scroller h4:hover{
+    color: #b5dd23;
+    transition: all linear 0.5s;
+
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#img1 {
+    
+    height: 207px;
+    width: 232px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+
+
+#about-us{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 50px;
+
+}
+
+#img2{
+    height: 255px;
+    width: 195px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.6;
+
+}
+#about-us-in{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    width: 55%;
+}
+
+#about-us-in h1{
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+#about-us-in p{
+    
+     font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+
+#card-containers{
+    display: flex ;
+    height: 65vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    /* background-color: red; */
+    gap: 60px;
+}
+
+
+.card{
+    height:  75%;
+    width: 25%;
+    border-radius: 20px;
+    /* background-color: #6da2f2; */
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    transition: all ease 0.5s;
+
+
+}
+
+#card1{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+#card2{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+#card3{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #b5dd23;
+    padding: 30px;
+    padding-top: 160px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.overlay h4{
+    color: #000;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.overlay p {
+    color: #000;
+    margin-bottom: 30px;
+    
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+
+.card:hover{
+    transform: rotate3d(1,1,0,20deg);
+}
+
+
+.background-image {
+    position: absolute;
+    top: -74px;
+    left: 147px;
+    width: 213px;
+    height: 282px;
+    z-index: -1; /* Ensure it is behind the cards */
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-white.svg") ;
+    background-size: contain;
+    background-position: center;
+    /* opacity: 0.9; Adjust opacity as needed */
+    background-repeat: no-repeat;
+
+}
+
+
+
+#arrow{
+    border: 1px solid black; 
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: block;
+    z-index: 12;
+    margin-left: 318px;
+    margin-top: -197px;
+    margin-bottom: 50px;
+    
+}
+
+
+#arrow img{
+    height: 55px;
+    width: 45px;
+    margin-top:60px;
+    margin-left:40px;
+}
+
+
+
+#arrow:hover{
+    background-color: #ffffff;
+    transition: all linear 0.1s;
+}
+
+
+
+#green-div{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    background-image:linear-gradient(to left bottom,#086b24,#b5dd23);
+}
+
+#green-div h4{
+    width: 50%;
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 50px;
+    margin: auto;
+}
+#green-div img{
+    height: 100%;
+    width: 217px;
+    object-fit: cover;
+}
+
+
+#page3{
+
+min-height: 80vh;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+#carousel{
+width: 40%;
+height: 50vh;
+margin: 90px;
+
+/* background-color: #086b24; */
+}
+
+
+.food-card img {
+    width:30vh;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.9;
+    z-index: 10;
+    position: relative;
+}
+
+
+.background-image-food {
+    position: absolute;
+    bottom: 30px;
+    left: 95px;
+    width: 213px;
+    height: 282px;
+    z-index: -1; /* Ensure it is behind the cards */
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-white.svg") ;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.7;
+     /* Adjust opacity as needed */
+    background-repeat: no-repeat;
+
+}
+
+
+#text{
+    margin-right:100px;
+    margin-top: 150px;
+    text-align: left;
+    width: 50%;
+    color: black;
+}
+
+#text h4{
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 30px;
+
+}
+
+#text p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+
+}
+
+#button{
+    height: 50px;
+    width: 180px;
+    border: 2px solid #b5dd23;
+   border-radius: 30px;
+   text-align: center;
+  padding-top: 14px;
+
+}
+
+
+#button a{
+    text-decoration: none;
+}
+
+
+
+#button:hover {
+    background: linear-gradient(to top,#086b24,#b5dd23);
+    color: black;
+    font-weight: 600;
+    border:none;
+}
+
+
+/* Add your existing styles */
+/* Add your existing styles */
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    rotate: -3deg;
+}
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 300px;
+    height: 470px;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+
+
+#follow svg{
+    height: 30px;
+    width: 30px;
+    padding-right: 7px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#follow{
+    text-align: right;
+    margin: auto;
+    margin-right:20vh;
+    color: #b5dd23;
+
+}
+
+
+#follow span{
+    font-size: 23px;
+    font-weight: 900;
+    text-decoration: none;
+   
+}
+
+#follow a{
+    text-decoration: none;
+}
+
+#follow span:hover{
+    color: #b5dd23;
+}
+
+
+
+
+
+ 
+
+.container-text-swiper {
+    max-width:80rem;
+    margin: 0 auto;
+    padding-left:15px;
+    padding-right:15px;
+  }
+  .animeslide-slide {
+    color:#ffffff;
+  }
+  
+  .animeslide-slide {
+    position: relative;
+    padding: 15px 0;
+    max-height: 500px;
+    background-size: cover;
+  }
+  .animeslide-slide .container-text-swiper {
+    position: relative;
+  }
+  .animeslide-slide.swiper-slide-active [data-animate] {
+    opacity: 1;
+    transform: none;
+  }
+  .animeslide-slide.swiper-slide-active {
+    transition-delay: 0.6s;
+  }
+  .animeslide-slide.swiper-slide-active .animeslide-desc {
+    transition-delay: 1s;
+  }
+
+
+  .animeslide-desc {
+    /* padding: 15px 22px; */
+    border-radius: 8px;
+    text-align: center;
+    font-size: 40px;
+    max-width: 1000px;
+    opacity: 0.9;
+    font-weight: 900;
+    margin-left: 15vh;
+  }
+  
+  [data-animate] {
+    opacity: 0;
+    transition: all 0.8s ease-in;
+  }
+  [data-animate="top"] {
+    transform: translate3d(0, 15px, 0);
+  }
+  
+
+
+
+  .text-swiper img{
+    height: 70px;
+    width: 70px;
+    margin: auto;
+
+  }
+
+
+  .text-swiper{
+    rotate: 3deg;
+  }
+
+
+  #inverted-comma1{
+    margin-left: 314px;
+    margin-top: 100px;
+  }
+
+  
+
+  #inverted-comma2{
+    margin-left: 1549px;
+    margin-top: -389px;
+    margin-bottom: 22px;
+}
+  
+
+.text-swiper section{
+    margin-top: -100px;
+    padding-top: 0;
+}
+
+#page5{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    z-index: 10;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.elem{
+    height: 40%;
+    width: 27%;
+    overflow:hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.elem h2{
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    background-color: #b5dd23;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    color: #000;
+    font-weight: 900;
+    position: absolute;
+    z-index: 10;
+    transition: all ease 0.5s;
+
+}
+
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+    transition: all ease 0.5s;
+}
+
+
+.elem:hover h2{
+    color:white;
+    background-color: transparent;
+    
+}
+
+
+
+.elem:hover img{
+   scale: 1;
+
+}
+
+#page5 h1{
+    font-size: 90px;
+    position: absolute;
+    top: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:800;
+    color: #000;
+    -webkit-text-stroke: 2px #fff;
+}
+
+
+
+#page5 h1:hover {
+    -webkit-text-stroke: 2px #b5dd23; /* Stroke color on hover */
+}
+
+
+#page6{
+
+        height: 35vh;
+        width: 100%;
+        background:linear-gradient(to left bottom,#086b24 0%,#b5dd23 80%);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: flex-start;
+        gap: 150px;
+        padding: 0 100px;
+    }
+
+#img_background{
+    height:30vh;
+    margin-top: -3px;
+    margin-left: -91px;
+    position: absolute;
+}
+
+
+
+
+#page5>img{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+
+#f1 img{
+    height: 100px;
+  
+}
+
+
+
+
+#f1,#f2,#f3,#f4{
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+#f2 h2{
+ 
+    font-size:30px ;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight:800;
+    margin-bottom: 10px;
+}
+
+
+#f3 h2{
+    font-size:30px ;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight:800;
+    margin-bottom: 10px;
+}
+
+
+#f4 p{
+    font-size:20px ;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight:400;
+    margin-bottom: 10px;
+}
+
+#f4 span{
+    font-size:18px ;
+    white-space: wrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight:600;
+    margin-bottom: 10px;
+}
+
+#f4 span>a{
+   text-decoration: none;
+   color: #000;
+}
+
+
+#f4 h3{
+    font-size:20px ;
+    white-space: wrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight:800;
+    margin-bottom: 10px;
+}
+
+
+
+
+#f3 h2:hover{
+    color: #fff;
+}
