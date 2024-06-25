@@ -1,6 +1,5 @@
 # Sidcup-Family-Golf-Clone
 
-Project Overview
 I have created an exact replica of a website  Sidcup Family Golf -> [https://sidcupfamilygolf.com/] using the following technologies:
 HTML
 CSS
