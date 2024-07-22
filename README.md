@@ -5,7 +5,7 @@
 This project is focused on learning and implementing various animation techniques using modern web technologies. The project comprises a web page with interactive elements, animations, and transitions to enhance the user experience. I have created an exact replica of the website [Sidcup Family Golf](https://sidcupfamilygolf.com/) using the following technologies:
 
 
-This the Depolyed link[Sidcup Family Golf](https://sid-cup-clone.netlify.app/)
+This the Depolyed link [Sidcup Family Golf](https://sid-cup-clone.netlify.app/)
 
 ## Tools Used
 
